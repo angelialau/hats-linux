@@ -34,6 +34,7 @@ where `ifcfg-enp0s3` is your network interface
 
 ## Recommended: Enable CentOS base repository and update system
 ```
+sudo yum install yum-utils
 sudo yum-config-manager --enable base
 sudo yum update -y
 ```
@@ -108,7 +109,7 @@ touch /opt/android-sdk/.android/repositories.cfg
 ## Install Android build tools
 ```
 yes | sdkmanager --licenses
-sdkmanager 'system-images;android-26;google_apis;x86' 'build-tools;26.0.2' 'platform-tools'
+sdkmanager 'build-tools;27.0.3' 'system-images;android-27;google_apis;x86' 'platform-tools'
 ```
 
 
